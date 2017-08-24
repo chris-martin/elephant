@@ -5,9 +5,9 @@
 This demo project was inspired by [a Stack Overflow question][1] which asks:
 
 > How can I re-assign a variable in a function in Haskell?
-
+>
 > For example,
-
+>
 > ```haskell
 > elephant = 0
 >
