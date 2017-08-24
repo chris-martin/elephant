@@ -1,17 +1,24 @@
 name: elephant
 
-executables:
-  elephant:
-    source-dirs: app
-    main: elephant.hs
+library:
+  source-dirs: lib
+  exposed-modules:
+    - Elephant
 
 dependencies:
   - base
-  - lens
+  - microlens
+  - microlens-mtl
   - mtl
+  - transformers
 
 ghc-options:
   - -Wall
 
-default-extensions:
-  - NoImplicitPrelude
+tests:
+  doctest:
+    source-dirs: test
+    main: doctest.hs
+    dependencies:
+      - doctest
+      - elephant

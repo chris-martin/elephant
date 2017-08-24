@@ -17,8 +17,8 @@ This demo project was inspired by [a Stack Overflow question][1] which asks:
 The short answer is that we don't have a language-level mechanism to model that
 sort of thing in Haskell, and it's generally not what you want anyway.
 
-This project provides the *long answer*, demonstrating how to use a lens with a
-state monad class to produce a sort of direct translation of the
+This project provides the *long answer*, demonstrating how to use a lens and the
+state monad to produce something that looks like a direct translation of the
 imperative-programming concept of reassigning a variable.
 
 We end up writing a program that looks like this:
@@ -26,7 +26,7 @@ We end up writing a program that looks like this:
 ```haskell
 do
   printElephant
-  function 2
+  setElephant 2
   printElephant
 ```
 

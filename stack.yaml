@@ -1,11 +1,4 @@
-resolver: lts-9.0
+resolver: lts-9.1
 
 packages:
   - elephant
-
-extra-deps:
-  - hedgehog-0.5
-
-nix:
-  packages:
-    - zlib
